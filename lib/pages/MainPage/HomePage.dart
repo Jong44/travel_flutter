@@ -87,7 +87,6 @@ class _HomePageState extends State<HomePage> {
         });
       });
       listDestination = data;
-      print(listDestination[0]['isLiked']);
     });
   }
 
@@ -109,7 +108,7 @@ class _HomePageState extends State<HomePage> {
     }
     return Scaffold(
         appBar: AppBar(
-          toolbarHeight: 80,
+          toolbarHeight: 50,
           backgroundColor: Colors.transparent,
           elevation: 0,
           title: const Row(
@@ -274,7 +273,7 @@ class _HomePageState extends State<HomePage> {
                     height: 200,
                     child: CarouselSlider(
                         options: CarouselOptions(
-                          height: 200,
+                          height: 190,
                           viewportFraction: 0.9,
                           enableInfiniteScroll: true,
                           autoPlay: true,
@@ -291,6 +290,10 @@ class _HomePageState extends State<HomePage> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               color: Colors.grey.shade300,
+                              image: const DecorationImage(
+                                image: AssetImage('assets/images/promo.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           )
                         ]),
