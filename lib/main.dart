@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/pages/AuthPage/LoginPage.dart';
+import 'package:travel_app/pages/AuthPage/welcome.dart';
 import 'package:travel_app/pages/MainPage/MainPage.dart';
 
 void main() {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Travel App',
-      home: const MainPage(),
+      home: const welcome(),
     );
   }
 }
