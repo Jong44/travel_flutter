@@ -1,8 +1,13 @@
+import 'dart:convert';
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:travel_app/components/global/CardTravel.dart';
 import 'package:travel_app/config/ColorConfig.dart';
+import 'package:travel_app/pages/DetailPage/DetailDestinasi.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -29,10 +34,10 @@ class _HomePageState extends State<HomePage> {
     },
     {
       "icon": FaIcon(
-        FontAwesomeIcons.building,
+        FontAwesomeIcons.water,
         size: 15,
       ),
-      "title": "Bangunan",
+      "title": "Pulau",
     },
     {
       "icon": FaIcon(
@@ -57,10 +62,51 @@ class _HomePageState extends State<HomePage> {
     },
   ];
 
+  List liked = [
+    {
+      "idDestinasi": 1,
+    },
+    {
+      "idDestinasi": 3,
+    }
+  ];
+
+  List listDestination = [];
+
+  Future loadJson() async {
+    final String response =
+        await rootBundle.loadString('assets/data/destinasi.json');
+    final data = await json.decode(response);
+    setState(() {
+      liked.forEach((element) {
+        data.forEach((element2) {
+          if (element['idDestinasi'] == element2['id']) {
+            element2['isLiked'] = true;
+          }
+          element2['isLiked'] ??= false;
+        });
+      });
+      listDestination = data;
+      print(listDestination[0]['isLiked']);
+    });
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    loadJson();
+  }
+
   int _selectedCategories = 0;
 
   @override
   Widget build(BuildContext context) {
+    if (listDestination.isEmpty) {
+      return const Center(
+        child: CircularProgressIndicator(),
+      );
+    }
     return Scaffold(
         appBar: AppBar(
           toolbarHeight: 80,
@@ -89,6 +135,7 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.symmetric(horizontal: 10),
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -248,6 +295,70 @@ class _HomePageState extends State<HomePage> {
                           )
                         ]),
                   ),
+                  const SizedBox(height: 20),
+                  Text(
+                    'Rekomendasi Tempat Wisata',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 15),
+                  Column(
+                    children: List.generate(6, (index) {
+                      if (index % 2 == 0) {
+                        return Row(
+                          children: [
+                            Expanded(
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => DetailDestinasi(
+                                              isLiked: listDestination[index]
+                                                  ['isLiked'],
+                                              destinasi:
+                                                  listDestination[index])));
+                                },
+                                highlightColor: Colors.transparent,
+                                splashColor: Colors.transparent,
+                                child: CardTravel(
+                                  image: listDestination[index]['image'],
+                                  name: listDestination[index]['name'],
+                                  location: listDestination[index]['location'],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 10),
+                            Expanded(
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => DetailDestinasi(
+                                              isLiked:
+                                                  listDestination[index + 1]
+                                                          ['isLiked'] ??
+                                                      false,
+                                              destinasi:
+                                                  listDestination[index + 1])));
+                                },
+                                highlightColor: Colors.transparent,
+                                splashColor: Colors.transparent,
+                                child: CardTravel(
+                                  image: listDestination[index + 1]['image'],
+                                  name: listDestination[index + 1]['name'],
+                                  location: listDestination[index + 1]
+                                      ['location'],
+                                ),
+                              ),
+                            ),
+                          ],
+                        );
+                      } else {
+                        return const SizedBox(height: 20);
+                      }
+                    }),
+                  )
                 ],
               ),
             ),

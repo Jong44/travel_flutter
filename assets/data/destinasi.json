@@ -1,0 +1,343 @@
+[
+    {
+        "id": 1,
+        "name": "Pantai Kuta",
+        "location": "Bali, Indonesia",
+        "description": "Pantai Kuta adalah salah satu pantai yang terletak di Bali, Indonesia. Pantai ini terkenal dengan ombaknya yang besar dan cocok untuk berselancar. Selain itu, Pantai Kuta juga memiliki pemandangan matahari terbenam yang indah. Pantai ini juga memiliki banyak tempat wisata dan restoran yang menyajikan makanan khas Bali.",
+        "image": "assets/images/pantai_kuta.webp",
+        "harga": 1000000,
+        "rating": 4.5,
+        "category": "Pantai"
+    },
+    {
+        "id": 2,
+        "name": "Gunung Bromo",
+        "location": "Jawa Timur, Indonesia",
+        "description": "Gunung Bromo adalah salah satu gunung berapi yang terletak di Jawa Timur, Indonesia. Gunung ini terkenal dengan pemandangan matahari terbitnya yang indah. Selain itu, Gunung Bromo juga memiliki kawah yang aktif dan sering meletus. Gunung Bromo juga memiliki banyak tempat wisata dan penginapan yang cocok untuk berlibur bersama keluarga.",
+        "image": "assets/images/gunung_bromo.webp",
+        "harga": 1500000,
+        "rating": 4.7,
+        "category": "Gunung"
+    },
+    {
+        "id": 3,
+        "name": "Danau Toba",
+        "location": "Sumatera Utara, Indonesia",
+        "description": "Danau Toba adalah danau vulkanik terbesar di Indonesia yang terletak di Sumatera Utara. Danau ini terkenal dengan keindahan alamnya yang menakjubkan. Danau Toba juga memiliki pulau di tengahnya yang disebut Pulau Samosir. Pulau Samosir memiliki banyak tempat wisata dan penginapan yang cocok untuk berlibur bersama keluarga.",
+        "image": "assets/images/danau_toba.jpeg",
+        "harga": 2000000,
+        "rating": 4.8,
+        "category": "Danau"
+    },
+    {
+        "id": 4,
+        "name": "Pulau Komodo",
+        "location": "Nusa Tenggara Timur, Indonesia",
+        "description": "Pulau Komodo adalah salah satu pulau yang terletak di Nusa Tenggara Timur, Indonesia. Pulau ini terkenal dengan hewan langka yang bernama Komodo. Pulau Komodo juga memiliki pemandangan alam yang indah dan cocok untuk berlibur bersama keluarga. Pulau Komodo juga memiliki banyak tempat wisata dan penginapan yang cocok untuk berlibur bersama keluarga.",
+        "image": "assets/images/pulau_komodo.jpg",
+        "harga": 2500000,
+        "rating": 4.9,
+        "category": "Pulau"
+    },
+    {
+        "id": 5,
+        "name": "Taman Nasional Lorentz",
+        "location": "Papua, Indonesia",
+        "description": "Taman Nasional Lorentz adalah taman nasional yang terletak di Papua, Indonesia. Taman nasional ini terkenal dengan keanekaragaman hayati yang luar biasa. Taman Nasional Lorentz juga memiliki pemandangan alam yang indah dan cocok untuk berlibur bersama keluarga. Taman Nasional Lorentz juga memiliki banyak tempat wisata dan penginapan yang cocok untuk berlibur bersama keluarga.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/taman-nasional-lorentz.jpg",
+        "harga": 3000000,
+        "rating": 5.0,
+        "category": "Taman Nasional"
+    },
+    {
+        "id": 6,
+        "name": "Pulau Raja Ampat",
+        "location": "Papua Barat, Indonesia",
+        "description": "Pulau Raja Ampat adalah salah satu pulau yang terletak di Papua Barat, Indonesia. Pulau ini terkenal dengan keindahan alam bawah lautnya yang menakjubkan. Pulau Raja Ampat juga memiliki pemandangan alam yang indah dan cocok untuk berlibur bersama keluarga. Pulau Raja Ampat juga memiliki banyak tempat wisata dan penginapan yang cocok untuk berlibur bersama keluarga.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pulau-raja-ampat.jpg",
+        "harga": 3500000,
+        "rating": 5.0,
+        "category": "Pulau"
+    },
+    {
+        "id": 7,
+        "name": "Pulau Bali",
+        "location": "Bali, Indonesia",
+        "description": "Pulau Bali adalah salah satu pulau yang terletak di Indonesia. Pulau ini terkenal dengan keindahan alamnya yang menakjubkan. Pulau Bali juga memiliki pemandangan alam yang indah dan cocok untuk berlibur bersama keluarga. Pulau Bali juga memiliki banyak tempat wisata dan penginapan yang cocok untuk berlibur bersama keluarga.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pulau-bali.jpg",
+        "harga": 4000000,
+        "rating": 5.0,
+        "category": "Pulau"
+    },
+    {
+        "id": 8,
+        "name": "Pulau Lombok",
+        "location": "Nusa Tenggara Barat, Indonesia",
+        "description": "Pulau Lombok adalah salah satu pulau yang terletak di Nusa Tenggara Barat, Indonesia. Pulau ini terkenal dengan keindahan alamnya yang menakjubkan. Pulau Lombok juga memiliki pemandangan alam yang indah dan cocok untuk berlibur bersama keluarga. Pulau Lombok juga memiliki banyak tempat wisata dan penginapan yang cocok untuk berlibur bersama keluarga.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pulau-lombok.jpg",
+        "harga": 4500000,
+        "rating": 5.0,
+        "category": "Pulau"
+    },
+    {
+        "id": 9,
+        "name": "Pulau Flores",
+        "location": "Nusa Tenggara Timur, Indonesia",
+        "description": "Pulau Flores adalah salah satu pulau yang terletak di Nusa Tenggara Timur, Indonesia. Pulau ini terkenal dengan keindahan alamnya yang menakjubkan. Pulau Flores juga memiliki pemandangan alam yang indah dan cocok untuk berlibur bersama keluarga. Pulau Flores juga memiliki banyak tempat wisata dan penginapan yang cocok untuk berlibur bersama keluarga.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pulau-flores.jpg",
+        "harga": 5000000,
+        "rating": 5.0,
+        "category": "Pulau"
+    },
+    {
+        "id": 10,
+        "name": "Pulau Bintan",
+        "location": "Kepulauan Riau, Indonesia",
+        "description": "Pulau Bintan adalah salah satu pulau yang terletak di Kepulauan Riau, Indonesia. Pulau ini terkenal dengan keindahan alamnya yang menakjubkan. Pulau Bintan juga memiliki pemandangan alam yang indah dan cocok untuk berlibur bersama keluarga. Pulau Bintan juga memiliki banyak tempat wisata dan penginapan yang cocok untuk berlibur bersama keluarga.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pulau-bintan.jpg",
+        "harga": 5500000,
+        "rating": 5.0,
+        "category": "Pulau"
+    },
+    {
+        "id": 11,
+        "name": "Pantai Sanur",
+        "location": "Bali, Indonesia",
+        "description": "Pantai Sanur adalah salah satu pantai yang terletak di Bali, Indonesia. Pantai ini terkenal dengan keindahan pemandangan matahari terbitnya. Pantai Sanur juga memiliki pasir putih yang lembut dan air laut yang jernih. Pantai ini juga memiliki banyak tempat wisata dan restoran yang menyajikan makanan laut segar.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pantai-sanur.jpg",
+        "harga": 1200000,
+        "rating": 4.6,
+        "category": "Pantai"
+    },
+    {
+        "id": 12,
+        "name": "Pantai Jimbaran",
+        "location": "Bali, Indonesia",
+        "description": "Pantai Jimbaran adalah salah satu pantai yang terletak di Bali, Indonesia. Pantai ini terkenal dengan keindahan pemandangan matahari terbenamnya. Pantai Jimbaran juga memiliki pasir putih yang lembut dan air laut yang jernih. Pantai ini juga memiliki banyak tempat wisata dan restoran yang menyajikan makanan laut segar.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pantai-jimbaran.jpg",
+        "harga": 1300000,
+        "rating": 4.7,
+        "category": "Pantai"
+    },
+    {
+        "id": 13,
+        "name": "Pantai Nusa Dua",
+        "location": "Bali, Indonesia",
+        "description": "Pantai Nusa Dua adalah salah satu pantai yang terletak di Bali, Indonesia. Pantai ini terkenal dengan keindahan pemandangan matahari terbitnya. Pantai Nusa Dua juga memiliki pasir putih yang lembut dan air laut yang jernih. Pantai ini juga memiliki banyak tempat wisata dan restoran yang menyajikan makanan laut segar.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pantai-nusa-dua.jpg",
+        "harga": 1400000,
+        "rating": 4.8,
+        "category": "Pantai"
+    },
+    {
+        "id": 14,
+        "name": "Pantai Lovina",
+        "location": "Bali, Indonesia",
+        "description": "Pantai Lovina adalah salah satu pantai yang terletak di Bali, Indonesia. Pantai ini terkenal dengan keindahan pemandangan matahari terbitnya. Pantai Lovina juga memiliki pasir hitam yang lembut dan air laut yang jernih. Pantai ini juga memiliki banyak tempat wisata dan restoran yang menyajikan makanan laut segar.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pantai-lovina.jpg",
+        "harga": 1500000,
+        "rating": 4.9,
+        "category": "Pantai"
+    },
+    {
+        "id": 15,
+        "name": "Pantai Padang Padang",
+        "location": "Bali, Indonesia",
+        "description": "Pantai Padang Padang adalah salah satu pantai yang terletak di Bali, Indonesia. Pantai ini terkenal dengan keindahan pemandangan matahari terbenamnya. Pantai Padang Padang juga memiliki pasir putih yang lembut dan air laut yang jernih. Pantai ini juga memiliki banyak tempat wisata dan restoran yang menyajikan makanan laut segar.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/pantai-padang-padang.jpg",
+        "harga": 1600000,
+        "rating": 5.0,
+        "category": "Pantai"
+    },
+    {
+        "id": 16,
+        "name": "Gunung Rinjani",
+        "location": "Lombok, Indonesia",
+        "description": "Gunung Rinjani adalah salah satu gunung berapi yang terletak di Lombok, Indonesia. Gunung ini memiliki ketinggian 3.726 meter dan merupakan gunung tertinggi kedua di Indonesia. Gunung Rinjani terkenal dengan pemandangan danau kawahnya yang indah. Selain itu, gunung ini juga menawarkan trekking yang menantang bagi para pendaki.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/gunung-rinjani.jpg",
+        "harga": 1800000,
+        "rating": 4.9,
+        "category": "Gunung"
+    },
+    {
+        "id": 17,
+        "name": "Gunung Semeru",
+        "location": "Jawa Timur, Indonesia",
+        "description": "Gunung Semeru adalah gunung berapi tertinggi di Pulau Jawa, Indonesia. Gunung ini memiliki ketinggian 3.676 meter dan terkenal dengan keindahan pemandangan alamnya. Gunung Semeru juga merupakan salah satu gunung berapi yang masih aktif di Indonesia. Pendakian ke puncak Gunung Semeru menawarkan pengalaman yang menantang dan pemandangan yang spektakuler.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/gunung-semeru.jpg",
+        "harga": 2000000,
+        "rating": 4.8,
+        "category": "Gunung"
+    },
+    {
+        "id": 18,
+        "name": "Gunung Kerinci",
+        "location": "Jambi, Indonesia",
+        "description": "Gunung Kerinci adalah gunung berapi tertinggi di Indonesia yang terletak di Provinsi Jambi. Gunung ini memiliki ketinggian 3.805 meter dan terkenal dengan keindahan pemandangan alamnya. Gunung Kerinci juga merupakan salah satu gunung berapi yang masih aktif di Indonesia. Pendakian ke puncak Gunung Kerinci menawarkan pengalaman yang menantang dan pemandangan yang spektakuler.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/gunung-kerinci.jpg",
+        "harga": 2200000,
+        "rating": 4.7,
+        "category": "Gunung"
+    },
+    {
+        "id": 19,
+        "name": "Gunung Merapi",
+        "location": "Yogyakarta, Indonesia",
+        "description": "Gunung Merapi adalah salah satu gunung berapi yang terletak di Yogyakarta, Indonesia. Gunung ini terkenal dengan keindahan pemandangan alamnya. Gunung Merapi juga merupakan salah satu gunung berapi yang masih aktif di Indonesia. Pendakian ke puncak Gunung Merapi menawarkan pengalaman yang menantang dan pemandangan yang spektakuler.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/gunung-merapi.jpg",
+        "harga": 2400000,
+        "rating": 4.6,
+        "category": "Gunung"
+    },
+    {
+        "id": 20,
+        "name": "Gunung Agung",
+        "location": "Bali, Indonesia",
+        "description": "Gunung Agung adalah gunung berapi tertinggi di Bali, Indonesia. Gunung ini memiliki ketinggian 3.142 meter dan terkenal dengan keindahan pemandangan alamnya. Gunung Agung juga merupakan salah satu gunung berapi yang masih aktif di Indonesia. Pendakian ke puncak Gunung Agung menawarkan pengalaman yang menantang dan pemandangan yang spektakuler.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/gunung-agung.jpg",
+        "harga": 2600000,
+        "rating": 4.5,
+        "category": "Gunung"
+    },
+    {
+        "id": 21,
+        "name": "Candi Borobudur",
+        "location": "Magelang, Indonesia",
+        "description": "Candi Borobudur adalah salah satu monumen Buddha terbesar di dunia yang terletak di Magelang, Indonesia. Candi ini merupakan warisan budaya dunia yang telah diakui oleh UNESCO. Candi Borobudur memiliki arsitektur yang megah dan pemandangan alam yang indah. Candi ini juga menjadi salah satu tujuan wisata spiritual bagi para pengunjung.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/candi-borobudur.jpg",
+        "harga": 2800000,
+        "rating": 4.9,
+        "category": "Monumen"
+    },
+    {
+        "id": 22,
+        "name": "Candi Prambanan",
+        "location": "Yogyakarta, Indonesia",
+        "description": "Candi Prambanan adalah kompleks candi Hindu terbesar di Indonesia yang terletak di Yogyakarta. Candi ini juga merupakan warisan budaya dunia yang telah diakui oleh UNESCO. Candi Prambanan memiliki arsitektur yang megah dan pemandangan alam yang indah. Candi ini juga menjadi salah satu tujuan wisata sejarah bagi para pengunjung.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/candi-prambanan.jpg",
+        "harga": 3000000,
+        "rating": 4.8,
+        "category": "Monumen"
+    },
+    {
+        "id": 23,
+        "name": "Kota Jakarta",
+        "location": "DKI Jakarta, Indonesia",
+        "description": "Kota Jakarta adalah ibu kota Indonesia yang terletak di Provinsi DKI Jakarta. Kota ini merupakan pusat pemerintahan, bisnis, dan kegiatan ekonomi di Indonesia. Jakarta juga memiliki banyak tempat wisata, pusat perbelanjaan, dan restoran yang menawarkan berbagai kuliner khas Indonesia dan internasional.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/kota-jakarta.jpg",
+        "harga": 3200000,
+        "rating": 4.7,
+        "category": "Kota"
+    },
+    {
+        "id": 24,
+        "name": "Kota Bandung",
+        "location": "Jawa Barat, Indonesia",
+        "description": "Kota Bandung adalah ibu kota Provinsi Jawa Barat, Indonesia. Kota ini terkenal dengan keindahan alamnya dan juga sebagai pusat pendidikan dan budaya. Bandung juga memiliki banyak tempat wisata, factory outlet, dan kuliner khas Sunda yang terkenal enak.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/kota-bandung.jpg",
+        "harga": 3400000,
+        "rating": 4.8,
+        "category": "Kota"
+    },
+    {
+        "id": 25,
+        "name": "Kota Yogyakarta",
+        "location": "Yogyakarta, Indonesia",
+        "description": "Kota Yogyakarta adalah ibu kota Provinsi Daerah Istimewa Yogyakarta, Indonesia. Kota ini terkenal dengan kekayaan budaya dan sejarahnya. Yogyakarta juga memiliki banyak tempat wisata, seperti Keraton Yogyakarta, Taman Sari, dan Malioboro yang merupakan pusat perbelanjaan dan kuliner khas Yogyakarta.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/kota-yogyakarta.jpg",
+        "harga": 3600000,
+        "rating": 4.9,
+        "category": "Kota"
+    },
+    {
+        "id": 26,
+        "name": "Kota Surabaya",
+        "location": "Jawa Timur, Indonesia",
+        "description": "Kota Surabaya adalah ibu kota Provinsi Jawa Timur, Indonesia. Kota ini merupakan pusat pemerintahan, bisnis, dan kegiatan ekonomi di Jawa Timur. Surabaya juga memiliki banyak tempat wisata, pusat perbelanjaan, dan kuliner khas Jawa Timur yang terkenal enak.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/kota-surabaya.jpg",
+        "harga": 3800000,
+        "rating": 5.0,
+        "category": "Kota"
+    },
+    {
+        "id": 27,
+        "name": "Kota Medan",
+        "location": "Sumatera Utara, Indonesia",
+        "description": "Kota Medan adalah ibu kota Provinsi Sumatera Utara, Indonesia. Kota ini terkenal dengan keindahan alamnya dan juga sebagai pusat perdagangan dan bisnis di Sumatera Utara. Medan juga memiliki banyak tempat wisata, pusat perbelanjaan, dan kuliner khas Sumatera Utara yang terkenal enak.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/kota-medan.jpg",
+        "harga": 4000000,
+        "rating": 5.0,
+        "category": "Kota"
+    },
+    {
+        "id": 28,
+        "name": "Kota Makassar",
+        "location": "Sulawesi Selatan, Indonesia",
+        "description": "Kota Makassar adalah ibu kota Provinsi Sulawesi Selatan, Indonesia. Kota ini terkenal dengan keindahan alamnya dan juga sebagai pusat perdagangan dan bisnis di Sulawesi Selatan. Makassar juga memiliki banyak tempat wisata, pusat perbelanjaan, dan kuliner khas Sulawesi Selatan yang terkenal enak.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/kota-makassar.jpg",
+        "harga": 4200000,
+        "rating": 5.0,
+        "category": "Kota"
+    },
+    {
+        "id": 29,
+        "name": "Kota Manado",
+        "location": "Sulawesi Utara, Indonesia",
+        "description": "Kota Manado adalah ibu kota Provinsi Sulawesi Utara, Indonesia. Kota ini terkenal dengan keindahan alamnya dan juga sebagai pusat perdagangan dan bisnis di Sulawesi Utara. Manado juga memiliki banyak tempat wisata, pusat perbelanjaan, dan kuliner khas Sulawesi Utara yang terkenal enak.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/kota-manado.jpg",
+        "harga": 4400000,
+        "rating": 5.0,
+        "category": "Kota"
+    },
+    {
+        "id": 30,
+        "name": "Kota Denpasar",
+        "location": "Bali, Indonesia",
+        "description": "Kota Denpasar adalah ibu kota Provinsi Bali, Indonesia. Kota ini terkenal dengan keindahan alamnya dan juga sebagai pusat perdagangan dan bisnis di Bali. Denpasar juga memiliki banyak tempat wisata, pusat perbelanjaan, dan kuliner khas Bali yang terkenal enak.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/kota-denpasar.jpg",
+        "harga": 4600000,
+        "rating": 5.0,
+        "category": "Kota"
+    },
+    {
+        "id": 31,
+        "name": "Hutan Gunung Leuser",
+        "location": "Aceh, Indonesia",
+        "description": "Hutan Gunung Leuser adalah salah satu hutan tropis terbesar di Indonesia yang terletak di Provinsi Aceh. Hutan ini merupakan bagian dari Taman Nasional Gunung Leuser yang juga merupakan salah satu Situs Warisan Dunia UNESCO. Hutan Gunung Leuser memiliki keanekaragaman hayati yang sangat tinggi, termasuk populasi orangutan Sumatera yang terancam punah.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/hutan-gunung-leuser.jpg",
+        "harga": 4800000,
+        "rating": 4.9,
+        "category": "Hutan"
+    },
+    {
+        "id": 32,
+        "name": "Hutan Taman Nasional Ujung Kulon",
+        "location": "Banten, Indonesia",
+        "description": "Hutan Taman Nasional Ujung Kulon adalah salah satu hutan tropis terbesar di Indonesia yang terletak di Provinsi Banten. Hutan ini merupakan bagian dari Taman Nasional Ujung Kulon yang juga merupakan Situs Warisan Dunia UNESCO. Hutan Taman Nasional Ujung Kulon memiliki keanekaragaman hayati yang meliputi spesies langka seperti badak Jawa dan banteng.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/hutan-taman-nasional-ujung-kulon.jpg",
+        "harga": 5000000,
+        "rating": 4.8,
+        "category": "Hutan"
+    },
+    {
+        "id": 33,
+        "name": "Hutan Taman Nasional Way Kambas",
+        "location": "Lampung, Indonesia",
+        "description": "Hutan Taman Nasional Way Kambas adalah salah satu hutan tropis terbesar di Indonesia yang terletak di Provinsi Lampung. Hutan ini merupakan bagian dari Taman Nasional Way Kambas yang juga merupakan Situs Warisan Dunia UNESCO. Hutan Taman Nasional Way Kambas memiliki keanekaragaman hayati yang meliputi spesies langka seperti gajah Sumatera dan harimau Sumatera.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/hutan-taman-nasional-way-kambas.jpg",
+        "harga": 5200000,
+        "rating": 4.7,
+        "category": "Hutan"
+    },
+    {
+        "id": 34,
+        "name": "Hutan Taman Nasional Gunung Halimun Salak",
+        "location": "Jawa Barat, Indonesia",
+        "description": "Hutan Taman Nasional Gunung Halimun Salak adalah salah satu hutan tropis terbesar di Indonesia yang terletak di Provinsi Jawa Barat. Hutan ini merupakan bagian dari Taman Nasional Gunung Halimun Salak yang juga merupakan Situs Warisan Dunia UNESCO. Hutan Taman Nasional Gunung Halimun Salak memiliki keanekaragaman hayati yang meliputi spesies langka seperti banteng dan lutung.",
+        "image": "https://www.pegipegi.com/travel/wp-content/uploads/2019/07/hutan-taman-nasional-gunung-halimun-salak.jpg",
+        "harga": 5400000,
+        "rating": 4.6,
+        "category": "Hutan"
+    }
+
+]

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:travel_app/config/ColorConfig.dart';
-import 'package:travel_app/pages/MainPage/DiscoveryPage.dart';
+import 'package:travel_app/pages/MainPage/TransaksiPage.dart';
 import 'package:travel_app/pages/MainPage/FavoritePage.dart';
 import 'package:travel_app/pages/MainPage/HomePage.dart';
 import 'package:travel_app/pages/MainPage/ProfilePage.dart';
@@ -16,7 +16,7 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   List<Widget> _pages = <Widget>[
     const HomePage(),
-    const DiscoveryPage(),
+    const TransaksiPage(),
     const FavoritePage(),
     const ProfilePage(),
   ];
