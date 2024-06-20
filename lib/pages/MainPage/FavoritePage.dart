@@ -126,7 +126,7 @@ class _FavoritePageState extends State<FavoritePage> {
                                           Text(
                                             listDestination[index]['name'],
                                             style: const TextStyle(
-                                                fontSize: 16,
+                                                fontSize: 14,
                                                 fontWeight: FontWeight.bold),
                                           ),
                                           const SizedBox(height: 3),
@@ -143,7 +143,7 @@ class _FavoritePageState extends State<FavoritePage> {
                                                     ['location'],
                                                 style: const TextStyle(
                                                     color: Colors.grey,
-                                                    fontSize: 12),
+                                                    fontSize: 11),
                                               ),
                                             ],
                                           ),

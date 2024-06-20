@@ -118,7 +118,8 @@ class _HomePageState extends State<HomePage> {
               const Icon(Iconsax.location5,
                   color: ColorConfig.primaryColor, size: 22),
               const SizedBox(width: 8),
-              const Text('Semarang, Indonesia', style: TextStyle(fontSize: 16)),
+              const Text('Semarang, Indonesia',
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
             ],
           ),
           actions: [

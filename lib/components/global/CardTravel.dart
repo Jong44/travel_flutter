@@ -54,7 +54,7 @@ class CardTravel extends StatelessWidget {
                   name,
                   style: TextStyle(
                     overflow: TextOverflow.ellipsis,
-                    fontSize: 16,
+                    fontSize: 14,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -74,7 +74,7 @@ class CardTravel extends StatelessWidget {
                         style: TextStyle(
                           overflow: TextOverflow.ellipsis,
                           color: Colors.grey,
-                          fontSize: 14,
+                          fontSize: 12,
                         ),
                       ),
                     )

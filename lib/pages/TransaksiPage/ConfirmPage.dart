@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:travel_app/components/global/StarRate.dart';
 import 'package:travel_app/config/ColorConfig.dart';
+import 'package:travel_app/pages/TransaksiPage/ReportPage.dart';
 import 'package:travel_app/utils/FormatRupiah.dart';
 
 class ConfirmPage extends StatefulWidget {
@@ -212,6 +213,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                       const SizedBox(height: 5),
                       Expanded(
                         child: TextField(
+                          keyboardType: TextInputType.number,
                           controller: _phoneController,
                           style: TextStyle(fontSize: 12),
                           decoration: InputDecoration(
@@ -319,8 +321,34 @@ class _ConfirmPageState extends State<ConfirmPage> {
               ],
             ),
             ElevatedButton(
-              onPressed: () {},
-              child: Text('Bayar'),
+              onPressed: () {
+                if (_nameController.text.isEmpty ||
+                    _emailController.text.isEmpty ||
+                    _phoneController.text.isEmpty) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Data tidak boleh kosong'),
+                    ),
+                  );
+                } else {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ReportPage(
+                        data: {
+                          'name': _nameController.text,
+                          'email': _emailController.text,
+                          'phone': _phoneController.text,
+                          'jumlah': JumlahTiket,
+                          'price': widget.destinasi['harga'] * JumlahTiket,
+                          'destinasi': widget.destinasi,
+                        },
+                      ),
+                    ),
+                  );
+                }
+              },
+              child: Text('Bayar', style: TextStyle(color: Colors.white)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: ColorConfig.primaryColor,
                 shape: RoundedRectangleBorder(

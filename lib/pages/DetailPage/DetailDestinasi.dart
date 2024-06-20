@@ -74,7 +74,7 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
                             Text(
                               widget.destinasi['name'],
                               style: const TextStyle(
-                                fontSize: 22,
+                                fontSize: 20,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -90,6 +90,7 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
                                 Text(
                                   widget.destinasi['location'],
                                   style: const TextStyle(
+                                    fontSize: 13,
                                     color: Colors.grey,
                                   ),
                                 ),
@@ -106,7 +107,7 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
                         Text(
                           formatRupiah(widget.destinasi['harga']),
                           style: const TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(width: 5),
                         Text(
@@ -226,7 +227,7 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
                 Text(
                   formatRupiah(widget.destinasi['harga']),
                   style: const TextStyle(
-                    fontSize: 20,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -246,7 +247,8 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
-              child: const Text('Pesan Sekarang'),
+              child: const Text('Pesan Sekarang',
+                  style: TextStyle(color: Colors.white)),
             ),
           ],
         ),

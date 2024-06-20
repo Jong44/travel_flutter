@@ -1,10 +1,13 @@
 import 'dart:convert';
+import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:travel_app/components/global/CardTransaksi.dart';
 import 'package:travel_app/config/ColorConfig.dart';
+import 'package:travel_app/models/TransaksiModel.dart';
+import 'package:travel_app/service/TransaksiService.dart';
 
 class TransaksiPage extends StatefulWidget {
   const TransaksiPage({super.key});
@@ -16,14 +19,12 @@ class TransaksiPage extends StatefulWidget {
 class _TransaksiPageState extends State<TransaksiPage> {
   List<String> kategori = ['Semua', 'Aktif', 'Selesai'];
   int indexKategori = 0;
-  List listDestination = [];
+  List<Transaksimodel> listDestination = [];
 
   Future loadJson() async {
-    final String response =
-        await rootBundle.loadString('assets/data/destinasi.json');
-    final data = await json.decode(response);
+    final response = await TransaksiService().getTransaksi();
     setState(() {
-      listDestination = data;
+      listDestination = response;
     });
   }
 
@@ -98,28 +99,21 @@ class _TransaksiPageState extends State<TransaksiPage> {
             const SizedBox(height: 20),
             Expanded(
                 child: ListView.builder(
-              itemCount: 3,
+              itemCount: listDestination.length,
               itemBuilder: (context, index) {
                 if (indexKategori == 0) {
                   return CardTransaksi(
-                    image: listDestination[index]['image'],
-                    name: listDestination[index]['name'],
-                    location: listDestination[index]['location'],
-                    status: "Selesai",
+                    image: listDestination[index].image,
+                    name: listDestination[index].nama,
+                    location: listDestination[index].lokasi,
+                    status: "Aktif",
                   );
                 } else if (indexKategori == 1) {
                   return CardTransaksi(
-                    image: listDestination[index + 2]['image'],
-                    name: listDestination[index + 2]['name'],
-                    location: listDestination[index + 2]['location'],
-                    status: "3 Hari Lagi",
-                  );
-                } else {
-                  return CardTransaksi(
-                    image: listDestination[index + 4]['image'],
-                    name: listDestination[index + 4]['name'],
-                    location: listDestination[index + 4]['location'],
-                    status: "Selesai",
+                    image: listDestination[index].image,
+                    name: listDestination[index].nama,
+                    location: listDestination[index].lokasi,
+                    status: "Aktif",
                   );
                 }
               },
