@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/components/global/TextFieldMain.dart';
 import 'package:travel_app/config/ColorConfig.dart';
 import 'package:travel_app/pages/AuthPage/LoginPage.dart';
+import 'package:travel_app/pages/MainPage/MainPage.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -54,9 +55,12 @@ class _RegisterPageState extends State<RegisterPage> {
                 height: 50,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MainPage()));
+                },
                 child: Text(
-                  "Log In",
+                  "Create Account",
                   style: TextStyle(
                       color: Color(0xffffffff), fontWeight: FontWeight.w700),
                 ),
@@ -78,7 +82,7 @@ class _RegisterPageState extends State<RegisterPage> {
               Center(
                 child: InkWell(
                     onTap: () {
-                      Navigator.pushReplacement(context,
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => LoginPage()));
                     },
                     child: Text(

@@ -43,7 +43,7 @@ class _welcomeState extends State<welcome> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacement(context,
+                Navigator.push(context,
                     MaterialPageRoute(builder: (context) => LoginPage()));
               },
               child: Text(
@@ -62,7 +62,7 @@ class _welcomeState extends State<welcome> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacement(context,
+                Navigator.push(context,
                     MaterialPageRoute(builder: (context) => RegisterPage()));
               },
               child: Text(
@@ -70,6 +70,7 @@ class _welcomeState extends State<welcome> {
                 style: TextStyle(color: ColorConfig.primaryColor),
               ),
               style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xffffffff),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   minimumSize: Size(double.infinity, 45)),

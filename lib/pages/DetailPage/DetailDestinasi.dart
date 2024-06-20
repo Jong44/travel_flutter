@@ -241,7 +241,7 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
                             ConfirmPage(destinasi: widget.destinasi)));
               },
               style: ElevatedButton.styleFrom(
-                primary: ColorConfig.primaryColor,
+                backgroundColor: ColorConfig.primaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),

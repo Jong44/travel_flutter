@@ -41,6 +41,7 @@ class _FavoritePageState extends State<FavoritePage> {
     }
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: ColorConfig.primaryColor,
         elevation: 0,
         foregroundColor: Colors.white,

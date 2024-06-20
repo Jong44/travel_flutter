@@ -43,6 +43,7 @@ class _TransaksiPageState extends State<TransaksiPage> {
     }
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: ColorConfig.primaryColor,
         elevation: 0,
         foregroundColor: Colors.white,

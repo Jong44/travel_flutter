@@ -322,7 +322,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
               onPressed: () {},
               child: Text('Bayar'),
               style: ElevatedButton.styleFrom(
-                primary: ColorConfig.primaryColor,
+                backgroundColor: ColorConfig.primaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
